@@ -1,0 +1,50 @@
+* {
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 200;
+}
+
+header .row {
+	display: flex;
+	align-items: center;
+	background-color: #f48bdc;
+}
+
+header h1{
+	font-family: 'Gill Sans MT', 'Microsoft YaHai UI', sans-serif;
+	padding: 20px, 10px;
+	text-transform: uppercase;
+	margin: 0;
+	display: fixed;
+	align-items: left;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.col-md-3 {
+  margin: 0 0 30px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.col-md-5 {
+  margin: 0 0 30px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.col-md-4 {
+  margin: 0 0 30px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
