@@ -1,0 +1,164 @@
+* {
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 200;
+}
+
+header .row {
+	display: flex;
+	align-items: center;
+	background-color: #FF64AB;
+}
+
+ul {
+  margin: 30px auto;
+  text-align: center;
+  
+}
+
+li {
+  color: black;
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0 5px;
+}
+
+li:hover {
+  color: #DBE9EE;
+}
+
+header h1{
+	font-family: 'Gill Sans MT', 'Microsoft YaHai UI', sans-serif;
+	padding: 5px 0;
+	text-transform: uppercase;
+	margin: 0;
+	display: fixed;
+	align-items: left;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  color:black;
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.topnav {
+  position:relative;
+  z-index:2;
+  width:100%;
+  padding:0;
+  letter-spacing:1px;
+  margin-bottom: 0px;
+}
+.topnav a{
+padding:10px 15px 9px 15px !important;
+margin-right: 0;
+margin-left: 0;
+display:inline-block;
+color:black;
+}
+.topnav li a:hover{
+background-color:#ff318f;
+color:#ffffff;
+text-decoration:none;
+}
+.topnav li a.active {
+background-color:#4CAF50;  
+color:#ffffff;
+text-decoration:none;
+}
+
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('http://previews.123rf.com/images/dolgachov/dolgachov1406/dolgachov140600179/28758324-friendship-technology-and-internet-concept-three-smiling-teenage-girls-with-tablet-pc-computers-at-h-Stock-Photo.jpg');
+  background-size: cover;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  color: rgb(255,110,176);
+  opacity: 0.9;  
+  margin: 0;
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+body h2{
+	font-family: 'Gill Sans MT', 'Microsoft YaHai UI', sans-serif;
+	text-align: center;
+	display: fixed;
+	margin:0;
+}
+
+body h3{
+	font-family: 'Gill Sans MT', 'Microsoft YaHai UI', sans-serif;
+	text-align: center;
+	display: fixed;
+	margin: 5px;
+}
+
+body h4{
+	font-family: 'Gill Sans MT', 'Microsoft YaHai UI', sans-serif;
+	text-align: left;
+	display: fixed;
+}
+
+label {
+  margin: 10px 0;
+}
+
+body p{
+	font-family: 'Gill Sans MT', 'Microsoft YaHai UI', sans-serif;
+	text-align:center;
+	display:fixed;
+	font-size:16px;
+}
+
+.btn {
+  margin: 5px 5px;
+  display: fixed;
+  background:rgba(255,100,171,.6);
+  color: rgba(0,0,0,1);
+  transition: background-color 0.5s ease;
+  
+}
+
+.btn:hover {
+   background: rgba(255,100,171,1); 
+   color:rgba(0,0,0,1);
+}
+
+.col-md-3 {
+  margin: 0 0 10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.col-sm-4 {
+  margin: 0 0 10px;
+}
+
+.howItWorks {
+  background-color:rgba(255,100,171,.75);
+  width:100%;
+  margin: 10px;
+  padding-top: 10px;
+  padding: 10px 20px 10px 20px;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recruitment Buddy</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+	<link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+
+  <body>
+  	<script src="main.js" type="text/javascript"></script>
+
+    <header class="container-fullwidth">
+	  <div class="row">	  
+	    <h1 class="col-sm-8">Recruitment Buddy</h1>
+		<nav class="col-sm-4">
+		  <p>Username</p>
+		  <p>logout</p>
+		</nav>
+          </div>
+	</header>
+	  
+	
+	
+	<section class="container">
+		
+		
+		<div class="row">
+            <div class="col-sm-12">
+				<ul class="pagination">
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Round
+						<span class="caret"></span></a>
+							<ul class = "dropdown-menu" id="roundsMenu">
+							<!-- The ul is added in main.js after the num rounds button is clicked -->
+							</ul>
+					</li>
+					<!-- The number of parties gets added after num parties button is clicked-->
+            
+				</ul>
+			</div>
+		</div>
+		
+	    <div class="row">
+            <div class="col-sm-3">
+			<form>
+				<div class="input-group">
+				    <h4 for="numRounds">Number of Rounds</h4>
+                   
+					<input type="text" class="form-control" id="numRounds">
+                    <div class="input-group-btn">
+                        <button class="btn" onclick=numRoundsButton()>
+                            <i class="glyphicon glyphicon-ok"></i>
+                        </button>
+                    </div>
+					
+                </div>
+			</form>
+			<form>
+				<div class="input-group">
+				    <h4 for="numParties">Number of Parties</h4>
+				    <input type="text" class="form-control" id="numParties">
+					<div class="input-group-btn">
+                        <button class="btn" onclick=numPartiesButton()>
+                            <i class="glyphicon glyphicon-ok"></i>
+                        </button>
+                    </div>
+				</div>
+			</form>
+                <p>Other options</p>
+            </div>
+      
+            <div class="col-sm-6" style="text-align:center;">
+                <h2>Activities:</h2>
+					<button type="button" class="btn" href="#">Clear All</button></li>
+				    <div id="athletics">
+					    <h3>Athletics</h3>
+				        <button type="button" class="btn" href="#">Basketball</button></li>
+                        <button type="button" class="btn" href="#">Cheer</button></li>
+					    <button type="button" class="btn" href="#">Dance</button></li>
+					    <button type="button" class="btn" href="#">Golf</button></li>
+					    <button type="button" class="btn" href="#">Gymnastics</button></li>
+					    <button type="button" class="btn" href="#">Lacrosse</button></li>
+						<button type="button" class="btn" href="#">Skiing</button></li>
+						<button type="button" class="btn" href="#">Soccer</button></li>
+						<button type="button" class="btn" href="#">Softball</button></li>
+						<button type="button" class="btn" href="#">Swimming</button></li>
+						<button type="button" class="btn" href="#">Tennis</button></li>
+						<button type="button" class="btn" href="#">Track & Field</button></li>
+						<button type="button" class="btn" href="#">Volleyball</button></li>						
+					</div>
+					<div id="academic">
+					    <h3>Academic</h3>
+						<button type="button" class="btn" href="#">Mathematic  Competitions</button></li>
+						<button type="button" class="btn" href="#">Science Competitions</button></li>
+						<button type="button" class="btn" href="#">Quiz Bowl</button></li>
+						<button type="button" class="btn" href="#">Odyssey of the Mind</button></li>
+						<button type="button" class="btn" href="#">Poetry Out Loud</button></li>	
+					</div>
+					<div id="artistic">
+					    <h3>Arts & Music</h3>
+						<button type="button" class="btn" href="#">Art</button></li>
+						<button type="button" class="btn" href="#">Band</button></li>
+						<button type="button" class="btn" href="#">Chorale/Choir</button></li>
+						<button type="button" class="btn" href="#">Drama</button></li>
+						<button type="button" class="btn" href="#">Fashion Design</button></li>
+						<button type="button" class="btn" href="#">Graphic Design</button></li>
+						<button type="button" class="btn" href="#">Orchestra</button></li>
+						<button type="button" class="btn" href="#">Photography</button></li>
+						<button type="button" class="btn" href="#">Singing</button></li>
+						<button type="button" class="btn" href="#">Theater</button></li>
+					</div>
+					<div id="cultural">
+					    <h3>Cultural</h3>
+				        <button type="button" class="btn" href="#">ASL</button></li>
+                        <button type="button" class="btn" href="#">Chinese Club</button></li>
+					    <button type="button" class="btn" href="#">French Club</button></li>
+					    <button type="button" class="btn" href="#">German Club</button></li>
+					    <button type="button" class="btn" href="#">Latin Club</button></li>
+					    <button type="button" class="btn" href="#">Russian Club</button></li>
+						<button type="button" class="btn" href="#">Spanish Club</button></li>
+					</div>
+					<div id="community">
+					    <h3>Community & Service</h3>
+                        <button type="button" class="btn" href="#">4-H</button></li>
+						<button type="button" class="btn" href="#">Beta Club</button></li>
+						<button type="button" class="btn" href="#">Church Groups</button></li>
+						<button type="button" class="btn" href="#">FCA</button></li>
+						<button type="button" class="btn" href="#">FFA</button></li>
+						<button type="button" class="btn" href="#">Key Club</button></li>
+					</div>
+					<div id="politics">
+					    <h3>Politics</h3>
+                        <button type="button" class="btn" href="#">Debate Club</button></li>
+						<button type="button" class="btn" href="#">Junior ROTC</button></li>
+						<button type="button" class="btn" href="#">Model UN</button></li>
+						<button type="button" class="btn" href="#">Speech Club</button></li>
+						<button type="button" class="btn" href="#">STUCO</button></li>
+						<button type="button" class="btn" href="#">Young Democrats</button></li>
+						<button type="button" class="btn" href="#">Young Republicans</button></li>
+						<button type="button" class="btn" href="#">Youth and Government</button></li>
+					</div>
+            </div>
+      
+            <div class="col-sm-3">
+                <h2>Member Matches:</h2>
+            </div>
+        </div>
+	</section>
+	
+  </body>
+<html>
